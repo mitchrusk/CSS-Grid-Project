@@ -7,10 +7,23 @@ body {
   justify-content: space-between;
   padding: 64px 0;
 }
-
+.navbar .left {
+    font-size: 32px;
+    font-weight: bold;
+}
+.navbar .right {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: ceenter;
+}
 .navbar .right a {
     text-decoration: none;
     color: black;
+}
+
+.navbar .right a:hover {
+    text-decoration: underline;
 }
 
 .navbar .right img {
@@ -18,10 +31,6 @@ body {
   height: 24px;
 }
 
-.navbar .left {
-    font-size: 32px;
-    font-weight: bold;
-}
 
 
 
