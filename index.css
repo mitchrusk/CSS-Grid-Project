@@ -45,6 +45,9 @@ body {
   height: 50px;
   width: 50px;
 }
+.navbar .hamburger:hover {
+  cursor: pointer;
+}
 
 .navbar .bar1,
 .bar2,
@@ -54,6 +57,41 @@ body {
   width: 36px;
   border-radius: 10px;
   margin: 4px;
+}
+
+.mobilenav {
+  width: 80px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.3s ease-in;
+}
+
+.mobilenav a {
+  text-decoration: none;
+  color: black;
+  margin: 16px 0;
+}
+
+.mobilenav img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobilenav a:hover {
+  text-decoration: underline;
+}
+
+.opendrawer {
+  transform: translateX(-160px);
 }
 
 .project-grid {
@@ -210,17 +248,17 @@ body {
 }
 
 .animatebar1 {
-  animation: flipbar1 1s;
+  animation: flipbar1 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animatebar2 {
-  animation: fadebar2 1s;
+  animation: fadebar2 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animatebar3 {
-  animation: flipbar3 1s;
+  animation: flipbar3 0.5s;
   animation-fill-mode: forwards;
 }
 
