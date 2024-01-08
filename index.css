@@ -192,3 +192,32 @@ body {
     font-size: 24px;
   }
 }
+
+@keyframes flipbar1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes fadebar2 {
+  from {
+    transform: scalex(1);
+    opacity: 1;
+  }
+  to {
+    transform: scalex(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipbar3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
