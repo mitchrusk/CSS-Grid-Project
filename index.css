@@ -19,7 +19,7 @@ body {
   width: 400px;
   display: flex;
   justify-content: space-between;
-  align-items: ceenter;
+  align-items: center;
 }
 .navbar .right a {
   text-decoration: none;
