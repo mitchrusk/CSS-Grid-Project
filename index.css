@@ -1,26 +1,31 @@
 body {
   font-family: "poppins", sans-serif;
 }
+
 .container {
   max-width: 90%;
   margin: 0 auto;
   padding: 0 16px;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 64px 0;
 }
+
 .navbar .left {
   font-size: 32px;
   font-weight: bold;
 }
+
 .navbar .right {
   width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar .right a {
   text-decoration: none;
   color: black;
@@ -34,13 +39,16 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .navbar .hamburger {
   display: none;
   height: 50px;
   width: 50px;
 }
 
-.navbar .bar {
+.navbar .bar1,
+.bar2,
+.bar3 {
   background-color: black;
   height: 4px;
   width: 36px;
@@ -140,10 +148,12 @@ body {
   text-align: center;
   padding: 64px;
 }
+
 @media only screen and (max-width: 1100px) {
   .container {
     max-width: 100%;
   }
+
   .project-grid {
     max-width: 100%;
     grid-template-areas:
@@ -155,29 +165,34 @@ body {
       "dimensional dimensional";
   }
 }
+
 @media only screen and (max-width: 768px) {
-    .project-grid {
-        margin-top: 80px;
-    }
-    .navbar {
-        padding: 16px 24px;
-        box-sizing: border-box;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 3;
-        background-color: white;
-        width: 100%;
-    }
+  .project-grid {
+    margin-top: 80px;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+  }
+
   .navbar .right {
     display: none;
   }
+
   .navbar .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .project-grid {
     max-width: 100%;
     grid-template-areas:
@@ -188,17 +203,34 @@ body {
       "cup foam"
       "dimensional dimensional";
   }
+
   .project .overlay {
     font-size: 24px;
   }
+}
+
+.animatebar1 {
+  animation: flipbar1 1s;
+  animation-fill-mode: forwards;
+}
+
+.animatebar2 {
+  animation: fadebar2 1s;
+  animation-fill-mode: forwards;
+}
+
+.animatebar3 {
+  animation: flipbar3 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes flipbar1 {
   from {
     transform: rotate(0);
   }
+
   to {
-    transform: rotate(45deg) translate(4px, 10px);
+    transform: rotate(45deg) translate(5px, 12px);
   }
 }
 
@@ -207,6 +239,7 @@ body {
     transform: scalex(1);
     opacity: 1;
   }
+
   to {
     transform: scalex(0);
     opacity: 0;
@@ -217,7 +250,8 @@ body {
   from {
     transform: rotate(0);
   }
+
   to {
-    transform: rotate(-45deg) translate(4px, -10px);
+    transform: rotate(-45deg) translate(4px, -12px);
   }
 }
